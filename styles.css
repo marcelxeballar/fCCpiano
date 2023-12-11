@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-
 }
 
 #piano {
@@ -32,6 +31,7 @@
     margin-left: -1px;
 }
 
+
 .key {
     background-color: white;
     border: 2px solid black;
@@ -48,7 +48,6 @@
     height: 55%;
     z-index: 4;
 }
-
 
 .joint-1, .joint-2, .joint-3, .joint-4, .joint-5{
     background: #1d1e22;
