@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+
+}
+
+#piano {
+    background: #00471b;
+    padding: 90px 20px 15px 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    width: 80vw;
+    margin: 60px auto;
+    margin-top: 10vh;
+    max-width: 600px;
+}
+
+.piano-keys {
+    position: relative;
+    display: inherit;
+    flex-direction: inherit;
+    height: 30.5vh;
+    max-height: 225px;
+    flex: 1 0 14.28%;
+    margin: 0;
+    padding: 0;
+}
+
+.piano-keys:not(:nth-child(1)) {
+    margin-left: -1px;
+}
+
+.key {
+    background-color: white;
+    border: 2px solid black;
+    width: 100%;
+    height: 100%;
+}
+
+.joints {
+    display: flex;
+    display: inherit;
+    flex-direction: inherit;
+    position: absolute;
+    width: 100%;
+    height: 55%;
+    z-index: 4;
+}
+
+
+.joint-1, .joint-2, .joint-3, .joint-4, .joint-5{
+    background: #1d1e22;
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    z-index: 3;
+}
+
+.joint-1, .joint-2, .joint-3, .joint-4, .joint-5, .key {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.joint-1 {
+    left: 9.28%;
+}
+
+.joint-2 {
+    left: 23.56%;
+}
+
+.joint-3 {
+    left: 52.12%;
+}
+
+.joint-4 {
+    left: 66.4%; 
+}
+.joint-5 {
+    left: 80.68%;
+}
+
+@media screen and (max-width: 800px) {
+    #piano {
+        padding: 70px 15px 15px 15px;
+        margin: 7vh auto;
+    }
+    .piano-keys { 
+    height: 11rem;
+ }
+}
+
+@media screen and (max-width: 600px) {
+    #piano {
+        padding: 40px 10px 11px 10px;
+        margin: 4vh auto;
+    }
+    .piano-keys { 
+    height: 7rem;
+    }
+ }
